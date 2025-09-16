@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 using Tyuiu.LazutinVS.Sprint1.Task0.V9.Lib;
 
-namespace Tyuiu.LazutinVS.Sprint1.Task0.V9
-{
-    internal class Program
+internal class Program
     {
         static void Main(string[] args)
         {
@@ -39,4 +37,3 @@ namespace Tyuiu.LazutinVS.Sprint1.Task0.V9
             Console.ReadLine();
         }
     }
-}
