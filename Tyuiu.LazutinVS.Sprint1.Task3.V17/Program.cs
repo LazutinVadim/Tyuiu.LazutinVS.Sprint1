@@ -1,39 +1,36 @@
-﻿using Tyuiu.LazutinVS.Sprint1.Task2.V21.Lib;
+﻿using Tyuiu.LazutinVS.Sprint1.Task3.V17.Lib;
 internal class Program
 {
     private static void Main(string[] args)
     {
         DataService ds = new DataService();
 
-        Console.Title = "Спринт #1 | Выполнил: Лазутин В. С. | РППб-25-1";
+        Console.Title = "Спринт #2 | Выполнил: Лазутин В. С. | РППб-25-1";
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* Спринт #1                                                               *");
+        Console.WriteLine("* Спринт #2                                                               *");
         Console.WriteLine("* Тема: Создание итогового решения по спринту                             *");
-        Console.WriteLine("* Задание #2                                                              *");
-        Console.WriteLine("* Вариант #21                                                             *");
+        Console.WriteLine("* Задание #3                                                              *");
+        Console.WriteLine("* Вариант #17                                                             *");
         Console.WriteLine("* Выполнил: Лазутин В. С.    | РППб-25-1                                  *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
-        Console.WriteLine("* Написать консольную программу которая вычисляет выражение               *");
-        Console.WriteLine("*  площадь прямоугольника                                                 *");
+        Console.WriteLine("* Написать программу, которая определяет, есть ли среди первых трех цифр  *");
+        Console.WriteLine("*   из дробной части заданного вещественного числа цифра 0.               *");
         Console.WriteLine("*                                                                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
         Console.WriteLine("***************************************************************************");
 
-        int x, y;
+        double x;
 
         Console.WriteLine("Введите значение X:");
-        x = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine("Введите значение Y:");
-        y = Convert.ToInt32(Console.ReadLine());
+        x = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine(ds.CalculateRectangleSquare(x, y));
+        Console.WriteLine(ds.ZeroCheck(x));
 
         Console.ReadLine();
     }
