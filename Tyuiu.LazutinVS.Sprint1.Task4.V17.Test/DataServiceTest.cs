@@ -8,10 +8,10 @@ namespace Tyuiu.LazutinVS.Sprint1.Task4.V17.Test
         public void VaidExpression()
         {
             DataService ds = new DataService();
-            double a = 5.0;
-            double b = 1.0;
+            double a = 25.0;
+            double b = 0;
             var res = ds.Calculate(a,b);
-            Assert.AreEqual(1.000, res);
+            Assert.AreEqual(0.200, res);
         }
     }
 }
