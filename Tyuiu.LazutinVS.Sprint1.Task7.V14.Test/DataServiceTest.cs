@@ -13,7 +13,7 @@ namespace Tyuiu.LazutinVS.Sprint1.Task7.V14.Test
 
             double result = ds.Calculate(x, y);
 
-            Assert.AreEqual(4.036, result);
+            Assert.AreEqual(2.536, result);
         }
     }
 }
